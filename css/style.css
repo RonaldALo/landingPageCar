@@ -41,12 +41,16 @@ html{
     overflow: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
-
+}
+section{
+    padding: 2rem 9%;
 
 }
 .header{
     position: fixed;
-    top: 0;left: 0;right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 999;
     display: flex;
     justify-content: space-between;
@@ -87,11 +91,100 @@ html{
     display: none;
 }
 
+.header.active {
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%; 
+}
+
+/* tela de login */
+
+.login-form-container{
+    position: fixed;
+    top: -105%;
+    left: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.9);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.login-form-container.active{
+    top: 0;
+    opacity: 1;
+}
+.login-form-container form{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border: var(--border);
+    text-align: center;
+    width: 40rem;
+}
+
+.login-form-container form .buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.login-form-container form  .btn{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;    
+}
+.login-form-container form h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+}
+.login-form-container form #box{
+    margin: .7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border: var(--border);
+    border-radius: .5rem;
+}
+.login-form-container form p{
+    padding: 1rem 0;
+    color: var(--light-color);
+    font-size: 1.5rem;
 
 
+}
+.login-form-container form p a{
+    color: var(--yellow);
+    text-decoration: underline;
+}
+.login-form-container #close-login-form{
+    position: absolute;
+    top: 1.5rem;right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+.home h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.home img{
+    width: 100%;
+    margin: 1rem 0;
 
-
-
+}
 
 
 
@@ -123,6 +216,13 @@ html{
     }
     .header{
         padding: 2rem;
+    }
+    .header.active {
+        padding: 2rem ; 
+    }
+    section{
+        padding: 2rem;
+        
     }
 }
 

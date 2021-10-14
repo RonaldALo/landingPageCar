@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Document</title>
+    <title>Maxwheels</title>
 </head>
+
 <body>
     <header class="header">
         <div id="menu-bnt" class="fas fa-bars"></div>
@@ -17,10 +18,10 @@
             <a href="#"><span>max</span>wheels</a>
         </div>
         <nav class="navbar">
-            <a href="#">home</a>
+            <a href="#home">home</a>
             <a href="#">vehicles</a>
             <a href="#">services</a>
-            <a href="#">featured</a>    
+            <a href="#">featured</a>
             <a href="#">reviews</a>
             <a href="#">contact</a>
         </nav>
@@ -29,8 +30,28 @@
             <i class="far fa-user"></i>
         </div>
     </header>
-
-    <script src="js/script.js"></script>
+    <div class="login-form-container">
+        <span id="close-login-form" class="fas fa-times"></span>
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" name="email" id="box" placeholder="email">
+            <input type="password" name="password" id="box" placeholder="password">
+            <p>forget your password <a href="#">ckick here</a></p>
+            <input type="submit" value="login now" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>don't have an account <a href="#">create one</a></p>
+        </form>
+    </div>
+    <section class="home" id="home">
+        <h1 class="home-parallax" data-speed='-2'>find your car</h1>
+        <img class="home-parallax" data-speed='5' src="image/home-img.png" alt="">
+        <a href="#" class="btn home-parallax" data-speed='7'>explore cars</a>
+    </section>
 </body>
+<script src="js/script.js"></script>
 
 </html>
