@@ -55,81 +55,80 @@ document.querySelector('.home').onmouseleave = () => {
 
 var swiper = new Swiper(".vehicles-sliders", {
     grabCursor: true,
-    centeredSlides: true,  
+    centeredSlides: true,
     spaceBetween: 20,
-    loop:true,
+    loop: true,
     autoplay: {
-      delay: 9500,
-      disableOnInteraction: false,
+        delay: 9500,
+        disableOnInteraction: false,
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 3,
-      },
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
     },
-  });
+});
 
 
-  var swiper = new Swiper(".featured-slider", {
+var swiper = new Swiper(".featured-slider", {
     grabCursor: true,
-    centeredSlides: true,  
+    centeredSlides: true,
     spaceBetween: 20,
-    loop:true,
+    loop: true,
     autoplay: {
-      delay: 9500,
-      disableOnInteraction: false,
+        delay: 9500,
+        disableOnInteraction: false,
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1040: {
-        slidesPerView: 3,
-      },
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1040: {
+            slidesPerView: 3,
+        },
     },
-  });
+});
 
 
-  var swiper = new Swiper(".reviews-slider", {
+var swiper = new Swiper(".reviews-slider", {
     grabCursor: true,
-    centeredSlides: true,  
+    centeredSlides: true,
     spaceBetween: 20,
-    loop:true,
+    loop: true,
     autoplay: {
-      delay: 9500,
-      disableOnInteraction: false,
+        delay: 9500,
+        disableOnInteraction: false,
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1040: {
-        slidesPerView: 3,
-      },
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1040: {
+            slidesPerView: 3,
+        },
     },
-  });
-
+});
